@@ -1,10 +1,74 @@
-//Colors
-:root {
-}
+  //Font
+  //Weight 400, 700
+  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Overpass:wght@400;700&family=Shippori+Antique+B1&display=swap');
 
-.faq {
-  &-container {
-    display: flex;
-    flex-flow: row;
+
+
+  //Fonts
+  $primary-font: 'Kumbh Sans', sans-serif;
+  $primary-font-size: 12px;
+
+  //Text
+  $dark-blue: hsl(238, 29%, 16%);
+  $soft-red: hsl(14, 88%, 65%);
+  $darker-gray-blue: hsl(237, 12%, 33%);
+  $dark-gray-blue: hsl(240, 6%, 50%);
+
+  //gradient:
+  $soft-violet: #af67e9; //hsl(273, 75%, 66%);
+  $soft-blue: #6565e7; //hsl(240, 73%, 65%);
+
+  //Dividers
+  $light-gray-blue: hsl(240, 5%, 91%);
+
+  //White
+  $white: white;
+
+  //Typography
+  h1 {
+    font-size: 48px;
   }
-}
+
+  body {
+    background-image: linear-gradient($soft-violet, $soft-blue);
+    background-attachment: fixed;
+    height: 100%;
+    font-family: $primary-font;
+  }
+
+  .centering {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .faq {
+    &-container {
+      display: flex;
+      flex-flow: row;
+      background-color: $white;
+      width: 60%;
+      border-radius: 15px;
+      box-shadow: 0px 5px 30px;
+    }
+
+    &-column {
+      text-align: left;
+
+      &-accordion {
+        background-color: $white;
+        padding: 20px 0 20px 0;
+        border-bottom: solid $light-gray-blue 2px;
+        border: none;
+
+        &:hover {
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+
+      &-panel {
+        font-size: 14px;
+      }
+    }
+  }
