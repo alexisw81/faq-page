@@ -1,72 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
 
-  <title>Frontend Mentor | FAQ Accordion Card</title>
-  <link rel="stylesheet" href="styles/main.css" />
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
+  <body>
+    <!--Card Container-->
+    <div class="faq-container centering">
+      <!--Left: Image-->
+      <div class="faq-image-container">
+        <!--background image-->
+        <img
+          id="image-background"
+          src="images/bg-pattern-desktop.svg"
+          alt="background"
+        />
 
-<body>
-  <!--Card Container-->
-  <div class="faq-container centering">
-    <!--Left: Image-->
-    <div class="faq-image-container">
-      <img src="images/illustration-woman-online-desktop.svg" alt="woman-desktop" />
+        <!--woman image-->
+        <img
+          id="image-woman"
+          src="images/illustration-woman-online-desktop.svg"
+          alt="woman"
+        />
+      </div>
+
+      <!--Right: FAQ Questions-->
+      <div class="faq-column">
+        <h1>FAQ</h1>
+        <button class="faq-column-accordion">
+          How many team members can I invite?
+          <div class="faq-column-icon">
+            <img src="images/icon-arrow-down.svg" alt="accordion-arrow" />
+          </div>
+        </button>
+        <div class="faq-column-panel">
+          You can invite up to 2 additional users on the Free plan. There is no
+          limit on team members for the Premium plan.
+          <div class="faq-column-icon">
+            <img src="images/icon-arrow-down.svg" alt="accordion-arrow" />
+          </div>
+        </div>
+        <button class="faq-column-accordion">
+          What is the maximum file upload size?
+          <div class="faq-column-icon">
+            <img src="images/icon-arrow-down.svg" alt="accordion-arrow" />
+          </div>
+        </button>
+        <div class="faq-column-panel">
+          No more than 2GB. All files in your account must fit your allotted
+          storage space.
+          <div class="faq-column-icon">
+            <img src="images/icon-arrow-down.svg" alt="accordion-arrow" />
+          </div>
+        </div>
+        <button class="faq-column-accordion">
+          How do I reset my password?
+          <div class="faq-column-icon">
+            <img src="images/icon-arrow-down.svg" alt="accordion-arrow" />
+          </div>
+        </button>
+        <div class="faq-column-panel">
+          Click “Forgot password” from the login page or “Change password” from
+          your profile page. A reset link will be emailed to you.
+          <div class="faq-column-icon">
+            <img src="images/icon-arrow-down.svg" alt="accordion-arrow" />
+          </div>
+        </div>
+        <button class="faq-column-accordion">
+          Can I cancel my subscription?
+          <div class="faq-column-icon">
+            <img src="images/icon-arrow-down.svg" alt="accordion-arrow" />
+          </div>
+        </button>
+        <div class="faq-column-panel">
+          Yes! Send us a message and we’ll process your request no questions
+          asked.
+          <div class="faq-column-icon">
+            <img src="images/icon-arrow-down.svg" alt="accordion-arrow" />
+          </div>
+        </div>
+        <button class="faq-column-accordion">
+          Do you provide additional support?
+          <div class="faq-column-icon">
+            <img src="images/icon-arrow-down.svg" alt="accordion-arrow" />
+          </div>
+        </button>
+        <div class="faq-column-panel">
+          Chat and email support is available 24/7. Phone lines are open during
+          normal business hours.
+          <div class="faq-column-icon">
+            <img src="images/icon-arrow-down.svg" alt="accordion-arrow" />
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!--Right: FAQ Questions-->
-    <div class="faq-column">
-      <h1>FAQ</h1>
-      <button class="faq-column-accordion">
-        How many team members can I invite?
-      </button>
-      <div class="faq-column-panel">
-        You can invite up to 2 additional users on the Free plan. There is no
-        limit on team members for the Premium plan.
-      </div>
-      <button class="faq-column-accordion">
-        What is the maximum file upload size?
-      </button>
-      <div class="faq-column-panel">
-        No more than 2GB. All files in your account must fit your allotted
-        storage space.
-      </div>
-      <button class="faq-column-accordion">How do I reset my password?</button>
-      <div class="faq-column-panel">
-        Click “Forgot password” from the login page or “Change password” from
-        your profile page. A reset link will be emailed to you.
-      </div>
-      <button class="faq-column-accordion">Can I cancel my subscription?</button>
-      <div class="faq-column-panel">
-        Yes! Send us a message and we’ll process your request no questions
-        asked.
-      </div>
-      <button class="faq-column-accordion">
-        Do you provide additional support?
-      </button>
-      <div class="faq-column-panel">
-        Chat and email support is available 24/7. Phone lines are open during
-        normal business hours.
-      </div>
-    </div>
-  </div>
-</body>
-
+    <!--Box Image-->
+    <img id="image-box" src="images/illustration-box-desktop.svg" alt="box" />
+  </body>
 </html>
