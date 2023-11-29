@@ -38,8 +38,9 @@ body {
 
 //Centering block on page
 .centering {
-  margin-left: 200px;
   position: absolute;
+  top: 15%;
+  left: 15%;
   display: flex;
   flex-direction: center;
   text-align: center;
@@ -50,8 +51,8 @@ body {
 //Orange box Image
 #image-box {
   position: relative;
-  top: 228px;
-  left: 100px;
+  top: 338px;
+  left: 120px;
   z-index: 2;
 }
 
@@ -63,7 +64,7 @@ body {
   &-image-container {
     width: 50%;
 
-    & > #image-background {
+    &>#image-background {
       position: absolute;
       bottom: -130px;
       right: 540px;
@@ -71,7 +72,7 @@ body {
       width: 100%;
     }
 
-    & > #image-woman {
+    &>#image-woman {
       position: relative;
       top: 14px;
       right: 190px;
