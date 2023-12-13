@@ -29,6 +29,15 @@ h1 {
   margin-top: 0;
 }
 
+//Media Querie screens
+
+/*
+@media screen and (max-width: $small) {
+    //do Smth
+  }
+*/
+$small: 376px;
+
 body {
   background-image: linear-gradient($soft-violet, $soft-blue);
   background-attachment: fixed;
@@ -45,6 +54,10 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: $small) {
+    margin-left: unset;
+  }
 }
 
 //Orange box Image
@@ -53,6 +66,12 @@ body {
   top: 228px;
   left: 100px;
   z-index: 2;
+
+  @media screen and (max-width: $small) {
+    top: 68px;
+    right: -10px;
+    width: 30%;
+  }
 }
 
 //FAQ Card
@@ -76,6 +95,12 @@ body {
       top: 14px;
       right: 190px;
       z-index: 1;
+
+      @media screen and (max-width: $small) {
+        top: -90px;
+        right: 60px;
+        width: 220%;
+      }
     }
   }
 
@@ -89,6 +114,11 @@ body {
     box-shadow: 0px 5px 30px;
     padding: 80px 100px;
     overflow: hidden;
+
+    @media screen and (max-width: $small) {
+      flex-flow: column;
+      padding: 120px 20px 30px 20px;
+    }
   }
 
   &-column {

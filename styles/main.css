@@ -5,6 +5,11 @@ h1 {
   margin-top: 0;
 }
 
+/*
+@media screen and (max-width: $small) {
+    //do Smth
+  }
+*/
 body {
   background-image: linear-gradient(#af67e9, #6565e7);
   background-attachment: fixed;
@@ -21,12 +26,24 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 376px) {
+  .centering {
+    margin-left: unset;
+  }
+}
 
 #image-box {
   position: relative;
   top: 228px;
   left: 100px;
   z-index: 2;
+}
+@media screen and (max-width: 376px) {
+  #image-box {
+    top: 68px;
+    right: -10px;
+    width: 30%;
+  }
 }
 
 .faq {
@@ -48,6 +65,13 @@ body {
   right: 190px;
   z-index: 1;
 }
+@media screen and (max-width: 376px) {
+  .faq-image-container > #image-woman {
+    top: -90px;
+    right: 60px;
+    width: 220%;
+  }
+}
 .faq-container {
   display: flex;
   flex-flow: row;
@@ -57,6 +81,12 @@ body {
   box-shadow: 0px 5px 30px;
   padding: 80px 100px;
   overflow: hidden;
+}
+@media screen and (max-width: 376px) {
+  .faq-container {
+    flex-flow: column;
+    padding: 120px 20px 30px 20px;
+  }
 }
 .faq-column {
   text-align: left;
